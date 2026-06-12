@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="style.css">
+
+
+    <!-- Character encoding -->
+    <meta charset="UTF-8">
+
+
+    <!-- Responsive viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- Page information -->
+    <title>
+        About | Harish Banjara
+    </title>
+
+
+    <meta name="description" content="Learn more about Harish Banjara, education, skills and career goals.">
+
+
+</head>
+
+
+
+<body>
+
+
+
+    <!-- Header -->
+
+    <header>
+<button id="theme-toggle" aria-label="Toggle Theme">🌙</button>
+
+
+
+        <h1>
+            About Me
+        </h1>
+
+
+
+        <nav aria-label="Primary Navigation">
+
+
+            <ul>
+
+
+                <li>
+                    <a href="index.html">
+                        Home
+                    </a>
+                </li>
+
+
+                <li>
+                    <a href="about.html" aria-current="page">
+                        About
+                    </a>
+                </li>
+
+
+                <li>
+                    <a href="projects.html">
+                        Projects
+                    </a>
+                </li>
+
+
+                <li>
+                    <a href="contact.html">
+                        Contact
+                    </a>
+                </li>
+
+
+            </ul>
+
+
+        </nav>
+
+
+    </header>
+
+
+
+
+
+
+    <!-- Main Content -->
+
+    <main>
+
+
+
+
+        <!-- About section -->
+
+        <article aria-labelledby="about-heading">
+
+
+            <h2 id="about-heading">
+                Who I Am
+            </h2>
+
+
+
+            <p>
+                I am a Computer Science Engineering student interested in
+                Artificial Intelligence, Machine Learning and Web Development.
+            </p>
+
+
+
+            <p>
+                I enjoy creating technology solutions and improving my skills
+                by building practical projects.
+            </p>
+
+
+
+        </article>
+
+
+
+
+
+
+        <!-- Education section -->
+
+        <section aria-labelledby="education-heading">
+
+
+            <h2 id="education-heading">
+                Education
+            </h2>
+
+
+
+            <p>
+                Bachelor of Technology (B.Tech)
+                <br>
+
+                Computer Science Engineering
+                <br>
+
+                Shoolini University
+            </p>
+
+
+
+        </section>
+
+
+
+
+
+
+        <!-- Goals section -->
+
+        <section aria-labelledby="goal-heading">
+
+
+            <h2 id="goal-heading">
+                Career Goals
+            </h2>
+
+
+
+            <p>
+                My goal is to become a skilled AI and Machine Learning
+                engineer while developing modern web applications.
+            </p>
+
+
+
+        </section>
+
+
+
+
+
+    </main>
+
+
+
+
+
+
+
+    <!-- Footer -->
+
+    <footer>
+
+
+        <p>
+            &copy; 2026 Harish Banjara. All Rights Reserved.
+        </p>
+
+
+    </footer>
+
+
+
+
+<script>
+document.addEventListener("DOMContentLoaded",()=>{
+ const toggle=document.getElementById("theme-toggle");
+ if(localStorage.getItem("theme")==="dark"){
+   document.documentElement.setAttribute("data-theme","dark");
+ }
+ if(toggle){
+   toggle.addEventListener("click",()=>{
+     const theme=document.documentElement.getAttribute("data-theme");
+     if(theme==="dark"){
+       document.documentElement.removeAttribute("data-theme");
+       localStorage.setItem("theme","light");
+       toggle.textContent="🌙";
+     }else{
+       document.documentElement.setAttribute("data-theme","dark");
+       localStorage.setItem("theme","dark");
+       toggle.textContent="☀️";
+     }
+   });
+ }
+});
+</script>
+
+</body>
+
+</html>

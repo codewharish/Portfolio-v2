@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="style.css">
+
+
+    <!-- Character encoding -->
+    <meta charset="UTF-8">
+
+
+    <!-- Responsive viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- Page information -->
+
+    <title>
+        Projects | Harish Banjara
+    </title>
+
+
+    <meta name="description" content="Portfolio projects created by Harish Banjara.">
+
+
+</head>
+
+
+
+<body>
+
+
+
+
+    <!-- Header -->
+
+    <header>
+<button id="theme-toggle" aria-label="Toggle Theme">🌙</button>
+
+
+
+        <h1>
+            My Projects
+        </h1>
+
+
+
+        <!-- Navigation -->
+
+        <nav aria-label="Primary Navigation">
+
+
+            <ul>
+
+
+                <li>
+                    <a href="index.html">
+                        Home
+                    </a>
+                </li>
+
+
+                <li>
+                    <a href="about.html">
+                        About
+                    </a>
+                </li>
+
+
+                <li>
+                    <a href="projects.html" aria-current="page">
+                        Projects
+                    </a>
+                </li>
+
+
+                <li>
+                    <a href="contact.html">
+                        Contact
+                    </a>
+                </li>
+
+
+            </ul>
+
+
+        </nav>
+
+
+
+    </header>
+
+
+
+
+
+
+
+    <!-- Main Content -->
+
+    <main>
+
+
+
+
+        <section aria-labelledby="projects-heading">
+
+
+            <h2 id="projects-heading">
+                Featured Projects
+            </h2>
+
+
+
+
+
+            <!-- Project card container -->
+
+            <div class="project-grid">
+
+
+
+
+
+                <!-- Project 1 -->
+
+
+                <article class="project-card">
+
+
+                    <h3>
+                        Student Performance Predictor
+                    </h3>
+
+
+
+                    <p>
+
+                        A Machine Learning model that predicts student
+                        performance based on academic and behavioral data.
+
+                    </p>
+
+
+
+
+                    <p>
+
+                        <strong>
+                            Tech Stack:
+                        </strong>
+
+                        Python, Pandas, Scikit-Learn, Streamlit
+
+                    </p>
+
+
+
+
+                    <a href="https://github.com/codewharish?tab=repositories" target="_blank" rel="noopener noreferrer">
+
+                        🚀 View Project
+
+                    </a>
+
+
+
+                </article>
+
+
+
+
+
+
+
+                <!-- Project 2 -->
+
+
+                <article class="project-card">
+
+
+                    <h3>
+                        Portfolio Website
+                    </h3>
+
+
+
+                    <p>
+
+                        A responsive personal portfolio website built using
+                        modern HTML5 and CSS3 techniques.
+
+                    </p>
+
+
+
+
+                    <p>
+
+                        <strong>
+                            Tech Stack:
+                        </strong>
+
+                        HTML5, CSS3, Responsive Design
+
+                    </p>
+
+
+
+
+                    <a href="https://github.com/codewharish?tab=repositories" target="_blank" rel="noopener noreferrer">
+
+                        🚀 View Project
+
+                    </a>
+
+
+
+                </article>
+
+
+
+
+
+
+            </div>
+
+
+
+        </section>
+
+
+
+
+
+    </main>
+
+
+
+
+
+
+    <!-- Footer -->
+
+    <footer>
+
+
+        <p>
+
+            &copy; 2026 Harish Banjara. All Rights Reserved.
+
+        </p>
+
+
+    </footer>
+
+
+
+
+
+<script>
+document.addEventListener("DOMContentLoaded",()=>{
+ const toggle=document.getElementById("theme-toggle");
+ if(localStorage.getItem("theme")==="dark"){
+   document.documentElement.setAttribute("data-theme","dark");
+ }
+ if(toggle){
+   toggle.addEventListener("click",()=>{
+     const theme=document.documentElement.getAttribute("data-theme");
+     if(theme==="dark"){
+       document.documentElement.removeAttribute("data-theme");
+       localStorage.setItem("theme","light");
+       toggle.textContent="🌙";
+     }else{
+       document.documentElement.setAttribute("data-theme","dark");
+       localStorage.setItem("theme","dark");
+       toggle.textContent="☀️";
+     }
+   });
+ }
+});
+</script>
+
+</body>
+
+</html>
